@@ -1,0 +1,163 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+/* Navigation buttons (for Order Now links) */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+nav a {
+    background-color: #5865F2;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #4752c4;
+}
+
+/* Main content container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Game sections/cards */
+.game-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.game-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Buttons for Order / Contact */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #4752c4;
+}
+
+/* Rank selection and price calculator */
+.rank-selector {
+    margin: 15px 0;
+}
+
+.rank-selector label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rank-selector select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.price-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e2f;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #5865F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Game-specific accent colors */
+.apex { border-left: 5px solid #FF6600; }
+.siege { border-left: 5px solid #FF3333; }
+.valorant { border-left: 5px solid #FF0000; }
+.warzone { border-left: 5px solid #3399FF; }
+.fortnite { border-left: 5px solid #FFCC00; }
+.roblox { border-left: 5px solid #00CC33; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .game-card {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
